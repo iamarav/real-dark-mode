@@ -1,0 +1,55 @@
+* {
+    font-family: system-ui, sans-serif;
+}
+
+body {
+    padding: 30px 20px;
+    background-color: #d7d7d7;
+}
+
+body.dark {
+    background-color: #000;
+    user-select: none;
+    cursor: none;
+}
+
+body a {
+    color: black;
+}
+
+#content {
+    max-width: 768px;
+    margin: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+button#toggle {
+    max-height: 50px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 30px;
+    cursor: pointer;
+}
+
+body.dark #cursor {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    left: -40px;
+    top: -40px;
+    z-index: -10;
+    border-radius: 50%;
+    box-shadow: 0 0 30px 40px #fff;
+    border: none;
+}
