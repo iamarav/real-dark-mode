@@ -5,6 +5,7 @@
 body {
     padding: 30px 20px;
     background-color: #d7d7d7;
+    overflow: hidden;
 }
 
 body.dark {
