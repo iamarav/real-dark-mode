@@ -7,21 +7,21 @@ const Labels = {
     LIGHT_ON: 'Turn Lights on!',
 }
 
-let isDark = body.classList.contains('dark');;
+const isDark = () => body.classList.contains('dark');;
 
 function positionElement(e) {
-    const mouseY = e.clientY;
-    const mouseX = e.clientX;
+    const mouseY = e.layerY;
+    const mouseX = e.layerX;
 
     cursor.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
 }
 
 window.addEventListener('mousemove', positionElement);
+window.addEventListener('touchstart', positionElement);
+window.addEventListener('touchmove', positionElement);
 
 function toggleDarkMode() {
-    isDark = body.classList.contains('dark');
-
-    if (isDark) {
+    if (isDark()) {
         body.classList.remove('dark');
         toggle.innerText = Labels.LIGHT_OFF
     }
