@@ -44,8 +44,8 @@ button#toggle {
 }
 
 body.dark #cursor {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     background-color: white;
     position: absolute;
     left: -40px;
